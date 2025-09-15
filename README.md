@@ -63,9 +63,11 @@ source .venv/bin/activate    # macOS / Linux
 
 # install deps
 pip install -r requirements.txt
+```
 
-🔧 Configuration
-Update your claude_desktop_config.json with the mcpServers entry for HR Assist:
+## 🔧 Configuration
+> **Update your claude_desktop_config.json with the mcpServers entry for HR Assist:
+```
 {
   "mcpServers": {
     "hr-assist": {
@@ -83,8 +85,10 @@ Update your claude_desktop_config.json with the mcpServers entry for HR Assist:
     }
   }
 }
+```
 
-🚀 Usage
+## 🚀 Usage
+```
 
 Start the MCP server:
 
@@ -111,8 +115,9 @@ Try HR automation prompts:
 “List pending leave requests”
 
 “Search employee by name”
+```
 
-📂 Examples
+## 📂 Examples
 ✅ Onboarding a new employee
 Onboard a new employee:
 - Name: Jane Doe
