@@ -72,7 +72,3 @@ if __name__ == "__main__":
         password=os.getenv("EMAIL_PWD"),
         use_tls=True
     )
-    # email_sender.send_email(
-    #     subject="Test Email",
-    #     body="This is a test email.",
-    #     to_emails="mohitranjan11082@gmail.com",)
