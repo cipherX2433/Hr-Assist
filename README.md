@@ -5,57 +5,144 @@
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](#)
 [![Issues](https://img.shields.io/github/issues/yourorg/hr-assist)](#)
 
-> **HR ASSIST** is an *agentic* AI system designed to help HR teams automate routine workflows — onboarding, ticketing, meeting scheduling, leave management and more. This repo is the MCP **server** code used by the Claude Desktop MCP client.
+> **HR ASSIST** is an *agentic* AI system designed to help HR teams automate routine workflows — onboarding, ticketing, meeting scheduling, leave management and more.  
+> This repo contains the MCP **server** code used by the Claude Desktop MCP client.
 
 ---
 
-## Table of contents
-- [Highlights](#highlights)
-- [Architecture](#architecture)
-- [Setup](#setup)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Examples](#examples)
-- [Docs / GitHub Pages](#docs--github-pages)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+## 📑 Table of contents
+- [✨ Highlights](#-highlights)
+- [🏗️ Architecture](#️-architecture)
+- [⚙️ Setup](#️-setup)
+- [🔧 Configuration](#-configuration)
+- [🚀 Usage](#-usage)
+- [📂 Examples](#-examples)
+- [📖 Docs / GitHub Pages](#-docs--github-pages)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
+- [📬 Contact](#-contact)
 
 ---
 
-## Highlights
+## ✨ Highlights
 - Agentic workflows for HR automation (onboarding flow example included)
 - MCP server with tools for email, ticketing, meetings, and leave requests
-- Simple example config for Claude Desktop MCP client
-- Can run locally or be published to GitHub Pages for styled docs
+- Example config for Claude Desktop MCP client
+- Can run locally or be deployed with GitHub Pages for styled docs
 
 ---
 
-## Architecture (high level)
-- `mcp` server exposes tools (Python functions decorated with `@mcp.tool()`) that the MCP client (Claude Desktop) calls.
+## 🏗️ Architecture (high level)
+
+- `mcp` server exposes tools (Python functions decorated with `@mcp.tool()`)  
 - Services:
-  - `EmployeeManager` — CRUD + search and reporting
-  - `LeaveManager` — balances, history, apply/cancel
-  - `MeetingManager` — schedule/cancel/list meetings
-  - `TicketManager` — request/track equipment
-- Email integration via `EmailSender` (SMTP)
-- Seed utilities for demo/test data
+  - **EmployeeManager** — CRUD + search and reporting  
+  - **LeaveManager** — balances, history, apply/cancel  
+  - **MeetingManager** — schedule/cancel/list meetings  
+  - **TicketManager** — request/track equipment  
+- Email integration via `EmailSender` (SMTP)  
+- Seed utilities for demo/test data  
+
+📌 *Diagram placeholder (add `docs/architecture.png` if available)*  
 
 ---
 
-## Setup
+## ⚙️ Setup
 
-> Prerequisites: Python 3.10+, pip, and optionally a virtualenv.
+> **Prerequisites:** Python 3.10+, pip, and optionally a virtualenv.
 
 ```bash
 # clone
 git clone https://github.com/yourorg/hr-assist.git
 cd hr-assist
 
-# create venv (optional but recommended)
+# create venv (recommended)
 python -m venv .venv
 source .venv/bin/activate    # macOS / Linux
 .\.venv\Scripts\activate     # Windows
 
-# install
+# install deps
 pip install -r requirements.txt
+
+🔧 Configuration
+Update your claude_desktop_config.json with the mcpServers entry for HR Assist:
+{
+  "mcpServers": {
+    "hr-assist": {
+      "command": "C:\\Users\\mrs\\.local\\bin\\uv",
+      "args": [
+        "--directory",
+        "C:\\code\\hr-assist",
+        "run",
+        "server.py"
+      ],
+      "env": {
+        "EMAIL": "YOUR_EMAIL",
+        "EMAIL_PWD": "YOUR_APP_PASSWORD"
+      }
+    }
+  }
+}
+
+🚀 Usage
+
+Start the MCP server:
+
+uv run server.py
+
+
+or:
+
+python server.py
+
+
+In Claude Desktop:
+
+Click ➕
+
+Select Add from hr-assist
+
+Claude connects and exposes available tools
+
+Try HR automation prompts:
+
+“Onboard a new employee”
+
+“List pending leave requests”
+
+“Search employee by name”
+
+📂 Examples
+✅ Onboarding a new employee
+Onboard a new employee:
+- Name: Jane Doe
+- Manager: Sarah Johnson
+- Email: jane.doe@example.com
+
+Tasks:
+- Add to HRMS
+- Send welcome email
+- Notify manager
+- Create tickets for laptop & ID card
+- Schedule intro meeting
+
+🔍 Search employees by name
+Find employee by name: "John"
+
+📋 Get direct reports
+Show all direct reports of E001
+
+📖 Docs / GitHub Pages
+
+Publish styled documentation with GitHub Pages:
+
+Push a docs/ folder
+
+In Repo Settings → Pages, select main branch, /docs folder
+
+Docs live at:
+
+https://<your-username>.github.io/hr-assist/
+
+
+Tip: add screenshots, diagrams, and CSS in docs/assets/ for a polished look.
