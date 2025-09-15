@@ -18,9 +18,6 @@
 - [🚀 Usage](#-usage)
 - [📂 Examples](#-examples)
 - [📖 Docs / GitHub Pages](#-docs--github-pages)
-- [🤝 Contributing](#-contributing)
-- [📜 License](#-license)
-- [📬 Contact](#-contact)
 
 ---
 
@@ -136,18 +133,3 @@ Find employee by name: "John"
 
 📋 Get direct reports
 Show all direct reports of E001
-
-📖 Docs / GitHub Pages
-
-Publish styled documentation with GitHub Pages:
-
-Push a docs/ folder
-
-In Repo Settings → Pages, select main branch, /docs folder
-
-Docs live at:
-
-https://<your-username>.github.io/hr-assist/
-
-
-Tip: add screenshots, diagrams, and CSS in docs/assets/ for a polished look.
