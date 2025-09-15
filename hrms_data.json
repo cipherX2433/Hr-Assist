@@ -1,0 +1,792 @@
+{
+    "employees": [
+        {
+            "emp_id": "E001",
+            "name": "Sarah Johnson",
+            "manager_id": null,
+            "email": "sarah.johnson@atliq.com"
+        },
+        {
+            "emp_id": "E002",
+            "name": "Michael Chen",
+            "manager_id": null,
+            "email": "michael.chen@atliq.com"
+        },
+        {
+            "emp_id": "E003",
+            "name": "David Wilson",
+            "manager_id": "E001",
+            "email": "david.wilson@atliq.com"
+        },
+        {
+            "emp_id": "E004",
+            "name": "Tony Sharma",
+            "manager_id": "E003",
+            "email": "tony.sharma@atliq.com"
+        },
+        {
+            "emp_id": "E005",
+            "name": "James Rodriguez",
+            "manager_id": "E003",
+            "email": "james.rodriguez@atliq.com"
+        },
+        {
+            "emp_id": "E006",
+            "name": "Emily Kim",
+            "manager_id": "E002",
+            "email": "emily.kim@atliq.com"
+        },
+        {
+            "emp_id": "E007",
+            "name": "Carlos Mendez",
+            "manager_id": "E006",
+            "email": "carlos.mendez@atliq.com"
+        },
+        {
+            "emp_id": "E008",
+            "name": "Lisa Wong",
+            "manager_id": "E006",
+            "email": "lisa.wong@atliq.com"
+        }
+    ],
+    "leaves": {
+        "E001": {
+            "balance": 16,
+            "history": [
+                {
+                    "history_id": 1,
+                    "emp_id": "E001",
+                    "leave_date": "2025-08-21",
+                    "request_id": 1
+                },
+                {
+                    "history_id": 2,
+                    "emp_id": "E001",
+                    "leave_date": "2025-08-31",
+                    "request_id": 2
+                },
+                {
+                    "history_id": 3,
+                    "emp_id": "E001",
+                    "leave_date": "2025-09-01",
+                    "request_id": 2
+                },
+                {
+                    "history_id": 4,
+                    "emp_id": "E001",
+                    "leave_date": "2025-09-02",
+                    "request_id": 2
+                },
+                {
+                    "history_id": 5,
+                    "emp_id": "E001",
+                    "leave_date": "2025-09-03",
+                    "request_id": 2
+                }
+            ]
+        },
+        "E002": {
+            "balance": 11,
+            "history": [
+                {
+                    "history_id": 1,
+                    "emp_id": "E002",
+                    "leave_date": "2025-07-16",
+                    "request_id": 3
+                },
+                {
+                    "history_id": 2,
+                    "emp_id": "E002",
+                    "leave_date": "2025-07-17",
+                    "request_id": 3
+                },
+                {
+                    "history_id": 3,
+                    "emp_id": "E002",
+                    "leave_date": "2025-07-18",
+                    "request_id": 3
+                },
+                {
+                    "history_id": 4,
+                    "emp_id": "E002",
+                    "leave_date": "2025-07-19",
+                    "request_id": 3
+                },
+                {
+                    "history_id": 5,
+                    "emp_id": "E002",
+                    "leave_date": "2025-07-05",
+                    "request_id": 4
+                },
+                {
+                    "history_id": 6,
+                    "emp_id": "E002",
+                    "leave_date": "2025-09-11",
+                    "request_id": 5
+                }
+            ]
+        },
+        "E003": {
+            "balance": 20,
+            "history": [
+                {
+                    "history_id": 1,
+                    "emp_id": "E003",
+                    "leave_date": "2025-06-17",
+                    "request_id": 6
+                },
+                {
+                    "history_id": 2,
+                    "emp_id": "E003",
+                    "leave_date": "2025-09-09",
+                    "request_id": 7
+                },
+                {
+                    "history_id": 3,
+                    "emp_id": "E003",
+                    "leave_date": "2025-06-23",
+                    "request_id": 8
+                }
+            ]
+        },
+        "E004": {
+            "balance": 20,
+            "history": [
+                {
+                    "history_id": 1,
+                    "emp_id": "E004",
+                    "leave_date": "2025-07-09",
+                    "request_id": 9
+                },
+                {
+                    "history_id": 2,
+                    "emp_id": "E004",
+                    "leave_date": "2025-06-27",
+                    "request_id": 10
+                },
+                {
+                    "history_id": 3,
+                    "emp_id": "E004",
+                    "leave_date": "2025-09-11",
+                    "request_id": 11
+                },
+                {
+                    "history_id": 4,
+                    "emp_id": "E004",
+                    "leave_date": "2025-09-12",
+                    "request_id": 11
+                },
+                {
+                    "history_id": 5,
+                    "emp_id": "E004",
+                    "leave_date": "2025-09-13",
+                    "request_id": 11
+                },
+                {
+                    "history_id": 6,
+                    "emp_id": "E004",
+                    "leave_date": "2025-09-14",
+                    "request_id": 11
+                },
+                {
+                    "history_id": 7,
+                    "emp_id": "E004",
+                    "leave_date": "2025-06-27",
+                    "request_id": 12
+                },
+                {
+                    "history_id": 8,
+                    "emp_id": "E004",
+                    "leave_date": "2025-06-28",
+                    "request_id": 12
+                },
+                {
+                    "history_id": 9,
+                    "emp_id": "E004",
+                    "leave_date": "2025-06-29",
+                    "request_id": 12
+                },
+                {
+                    "history_id": 10,
+                    "emp_id": "E004",
+                    "leave_date": "2025-06-30",
+                    "request_id": 12
+                },
+                {
+                    "history_id": 11,
+                    "emp_id": "E004",
+                    "leave_date": "2025-07-01",
+                    "request_id": 12
+                }
+            ]
+        },
+        "E005": {
+            "balance": 7,
+            "history": [
+                {
+                    "history_id": 1,
+                    "emp_id": "E005",
+                    "leave_date": "2025-06-22",
+                    "request_id": 13
+                },
+                {
+                    "history_id": 2,
+                    "emp_id": "E005",
+                    "leave_date": "2025-07-24",
+                    "request_id": 14
+                },
+                {
+                    "history_id": 3,
+                    "emp_id": "E005",
+                    "leave_date": "2025-07-22",
+                    "request_id": 15
+                }
+            ]
+        },
+        "E006": {
+            "balance": 20,
+            "history": [
+                {
+                    "history_id": 1,
+                    "emp_id": "E006",
+                    "leave_date": "2025-08-02",
+                    "request_id": 16
+                },
+                {
+                    "history_id": 2,
+                    "emp_id": "E006",
+                    "leave_date": "2025-08-03",
+                    "request_id": 16
+                },
+                {
+                    "history_id": 3,
+                    "emp_id": "E006",
+                    "leave_date": "2025-08-04",
+                    "request_id": 16
+                },
+                {
+                    "history_id": 4,
+                    "emp_id": "E006",
+                    "leave_date": "2025-08-05",
+                    "request_id": 16
+                },
+                {
+                    "history_id": 5,
+                    "emp_id": "E006",
+                    "leave_date": "2025-07-03",
+                    "request_id": 17
+                },
+                {
+                    "history_id": 6,
+                    "emp_id": "E006",
+                    "leave_date": "2025-06-20",
+                    "request_id": 18
+                },
+                {
+                    "history_id": 7,
+                    "emp_id": "E006",
+                    "leave_date": "2025-08-07",
+                    "request_id": 19
+                }
+            ]
+        },
+        "E007": {
+            "balance": 7,
+            "history": [
+                {
+                    "history_id": 1,
+                    "emp_id": "E007",
+                    "leave_date": "2025-08-26",
+                    "request_id": 20
+                },
+                {
+                    "history_id": 2,
+                    "emp_id": "E007",
+                    "leave_date": "2025-08-27",
+                    "request_id": 20
+                },
+                {
+                    "history_id": 3,
+                    "emp_id": "E007",
+                    "leave_date": "2025-08-28",
+                    "request_id": 20
+                },
+                {
+                    "history_id": 4,
+                    "emp_id": "E007",
+                    "leave_date": "2025-08-04",
+                    "request_id": 21
+                },
+                {
+                    "history_id": 5,
+                    "emp_id": "E007",
+                    "leave_date": "2025-08-05",
+                    "request_id": 21
+                },
+                {
+                    "history_id": 6,
+                    "emp_id": "E007",
+                    "leave_date": "2025-08-06",
+                    "request_id": 21
+                },
+                {
+                    "history_id": 7,
+                    "emp_id": "E007",
+                    "leave_date": "2025-08-07",
+                    "request_id": 21
+                },
+                {
+                    "history_id": 8,
+                    "emp_id": "E007",
+                    "leave_date": "2025-08-08",
+                    "request_id": 21
+                },
+                {
+                    "history_id": 9,
+                    "emp_id": "E007",
+                    "leave_date": "2025-09-12",
+                    "request_id": 22
+                }
+            ]
+        },
+        "E008": {
+            "balance": 11,
+            "history": [
+                {
+                    "history_id": 1,
+                    "emp_id": "E008",
+                    "leave_date": "2025-07-07",
+                    "request_id": 23
+                },
+                {
+                    "history_id": 2,
+                    "emp_id": "E008",
+                    "leave_date": "2025-07-08",
+                    "request_id": 23
+                },
+                {
+                    "history_id": 3,
+                    "emp_id": "E008",
+                    "leave_date": "2025-07-09",
+                    "request_id": 23
+                },
+                {
+                    "history_id": 4,
+                    "emp_id": "E008",
+                    "leave_date": "2025-07-10",
+                    "request_id": 23
+                },
+                {
+                    "history_id": 5,
+                    "emp_id": "E008",
+                    "leave_date": "2025-07-11",
+                    "request_id": 23
+                },
+                {
+                    "history_id": 6,
+                    "emp_id": "E008",
+                    "leave_date": "2025-08-25",
+                    "request_id": 24
+                }
+            ]
+        }
+    },
+    "meetings": {
+        "E001": [
+            {
+                "title": "Client Meeting",
+                "date": "2025-09-20",
+                "time": "11:00",
+                "location": "Conference Room B",
+                "attendees": [
+                    "E008",
+                    "E003"
+                ]
+            },
+            {
+                "title": "Team Sync",
+                "date": "2025-09-23",
+                "time": "09:00",
+                "location": "MS Teams",
+                "attendees": [
+                    "E007",
+                    "E008"
+                ]
+            }
+        ],
+        "E002": [
+            {
+                "title": "Team Sync",
+                "date": "2025-09-19",
+                "time": "14:00",
+                "location": "Zoom",
+                "attendees": [
+                    "E001",
+                    "E004"
+                ]
+            },
+            {
+                "title": "Planning",
+                "date": "2025-09-18",
+                "time": "11:00",
+                "location": "Conference Room A",
+                "attendees": [
+                    "E006"
+                ]
+            },
+            {
+                "title": "Team Sync",
+                "date": "2025-09-25",
+                "time": "13:00",
+                "location": "Conference Room A",
+                "attendees": [
+                    "E004"
+                ]
+            },
+            {
+                "title": "Planning",
+                "date": "2025-09-25",
+                "time": "13:00",
+                "location": "MS Teams",
+                "attendees": [
+                    "E007",
+                    "E004",
+                    "E005"
+                ]
+            },
+            {
+                "title": "Team Sync",
+                "date": "2025-09-20",
+                "time": "10:00",
+                "location": "Zoom",
+                "attendees": [
+                    "E007",
+                    "E008"
+                ]
+            },
+            {
+                "title": "Project Review",
+                "date": "2025-09-17",
+                "time": "09:00",
+                "location": "Conference Room A",
+                "attendees": [
+                    "E003"
+                ]
+            }
+        ],
+        "E003": [
+            {
+                "title": "Project Review",
+                "date": "2025-09-23",
+                "time": "14:00",
+                "location": "Conference Room B",
+                "attendees": [
+                    "E008"
+                ]
+            },
+            {
+                "title": "Team Sync",
+                "date": "2025-09-19",
+                "time": "15:00",
+                "location": "Cafeteria",
+                "attendees": [
+                    "E002"
+                ]
+            },
+            {
+                "title": "Team Sync",
+                "date": "2025-09-21",
+                "time": "16:00",
+                "location": "Conference Room A",
+                "attendees": [
+                    "E004",
+                    "E002",
+                    "E001"
+                ]
+            },
+            {
+                "title": "Client Meeting",
+                "date": "2025-09-16",
+                "time": "10:00",
+                "location": "Conference Room B",
+                "attendees": [
+                    "E005",
+                    "E004"
+                ]
+            },
+            {
+                "title": "Client Meeting",
+                "date": "2025-09-20",
+                "time": "10:00",
+                "location": "Conference Room A",
+                "attendees": [
+                    "E005",
+                    "E001",
+                    "E008"
+                ]
+            },
+            {
+                "title": "Team Sync",
+                "date": "2025-09-21",
+                "time": "13:00",
+                "location": "Zoom",
+                "attendees": [
+                    "E004"
+                ]
+            }
+        ],
+        "E004": [
+            {
+                "title": "Client Meeting",
+                "date": "2025-09-20",
+                "time": "12:00",
+                "location": "Cafeteria",
+                "attendees": [
+                    "E008"
+                ]
+            },
+            {
+                "title": "1:1",
+                "date": "2025-09-20",
+                "time": "13:00",
+                "location": "Conference Room A",
+                "attendees": [
+                    "E001",
+                    "E005",
+                    "E008"
+                ]
+            }
+        ],
+        "E005": [
+            {
+                "title": "Team Sync",
+                "date": "2025-09-23",
+                "time": "12:00",
+                "location": "Zoom",
+                "attendees": [
+                    "E004"
+                ]
+            },
+            {
+                "title": "Planning",
+                "date": "2025-09-21",
+                "time": "16:00",
+                "location": "Zoom",
+                "attendees": [
+                    "E002",
+                    "E003",
+                    "E008"
+                ]
+            },
+            {
+                "title": "Client Meeting",
+                "date": "2025-09-20",
+                "time": "16:00",
+                "location": "Cafeteria",
+                "attendees": [
+                    "E003"
+                ]
+            }
+        ],
+        "E006": [
+            {
+                "title": "1:1",
+                "date": "2025-09-15",
+                "time": "16:00",
+                "location": "Cafeteria",
+                "attendees": [
+                    "E003",
+                    "E002",
+                    "E008"
+                ]
+            },
+            {
+                "title": "1:1",
+                "date": "2025-09-24",
+                "time": "09:00",
+                "location": "Conference Room A",
+                "attendees": [
+                    "E007",
+                    "E002"
+                ]
+            },
+            {
+                "title": "1:1",
+                "date": "2025-09-16",
+                "time": "15:00",
+                "location": "Conference Room B",
+                "attendees": [
+                    "E004"
+                ]
+            },
+            {
+                "title": "Planning",
+                "date": "2025-09-22",
+                "time": "16:00",
+                "location": "Cafeteria",
+                "attendees": [
+                    "E008",
+                    "E007"
+                ]
+            }
+        ],
+        "E007": [
+            {
+                "title": "1:1",
+                "date": "2025-09-19",
+                "time": "09:00",
+                "location": "MS Teams",
+                "attendees": [
+                    "E004",
+                    "E008",
+                    "E001"
+                ]
+            },
+            {
+                "title": "Project Review",
+                "date": "2025-09-16",
+                "time": "09:00",
+                "location": "Zoom",
+                "attendees": [
+                    "E006"
+                ]
+            },
+            {
+                "title": "Project Review",
+                "date": "2025-09-17",
+                "time": "13:00",
+                "location": "Conference Room A",
+                "attendees": [
+                    "E002"
+                ]
+            },
+            {
+                "title": "Team Sync",
+                "date": "2025-09-23",
+                "time": "10:00",
+                "location": "MS Teams",
+                "attendees": [
+                    "E003",
+                    "E004"
+                ]
+            },
+            {
+                "title": "1:1",
+                "date": "2025-09-25",
+                "time": "14:00",
+                "location": "Zoom",
+                "attendees": [
+                    "E006",
+                    "E003",
+                    "E001"
+                ]
+            },
+            {
+                "title": "Project Review",
+                "date": "2025-09-22",
+                "time": "09:00",
+                "location": "Zoom",
+                "attendees": [
+                    "E008"
+                ]
+            }
+        ],
+        "E008": [
+            {
+                "title": "1:1",
+                "date": "2025-09-24",
+                "time": "09:00",
+                "location": "MS Teams",
+                "attendees": [
+                    "E007",
+                    "E003"
+                ]
+            },
+            {
+                "title": "Planning",
+                "date": "2025-09-24",
+                "time": "09:00",
+                "location": "Conference Room A",
+                "attendees": [
+                    "E007",
+                    "E004"
+                ]
+            },
+            {
+                "title": "Project Review",
+                "date": "2025-09-15",
+                "time": "09:00",
+                "location": "MS Teams",
+                "attendees": [
+                    "E003",
+                    "E001"
+                ]
+            }
+        ]
+    },
+    "tickets": [
+        {
+            "ticket_id": "1",
+            "emp_id": "E005",
+            "item": "Mouse",
+            "reason": "Project requirement",
+            "status": "Closed"
+        },
+        {
+            "ticket_id": "2",
+            "emp_id": "E003",
+            "item": "Headset",
+            "reason": "New hire setup",
+            "status": "Open"
+        },
+        {
+            "ticket_id": "3",
+            "emp_id": "E004",
+            "item": "Office Chair",
+            "reason": "Project requirement",
+            "status": "Closed"
+        },
+        {
+            "ticket_id": "4",
+            "emp_id": "E006",
+            "item": "Software License",
+            "reason": "Upgrade request",
+            "status": "In Progress"
+        },
+        {
+            "ticket_id": "5",
+            "emp_id": "E002",
+            "item": "Headset",
+            "reason": "Upgrade request",
+            "status": "Open"
+        },
+        {
+            "ticket_id": "6",
+            "emp_id": "E006",
+            "item": "Headset",
+            "reason": "Replacement for broken item",
+            "status": "In Progress"
+        },
+        {
+            "ticket_id": "7",
+            "emp_id": "E007",
+            "item": "Office Chair",
+            "reason": "Project requirement",
+            "status": "In Progress"
+        },
+        {
+            "ticket_id": "8",
+            "emp_id": "E007",
+            "item": "Software License",
+            "reason": "New hire setup",
+            "status": "Closed"
+        },
+        {
+            "ticket_id": "9",
+            "emp_id": "E004",
+            "item": "Keyboard",
+            "reason": "New hire setup",
+            "status": "Closed"
+        }
+    ]
+}
