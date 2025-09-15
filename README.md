@@ -37,7 +37,7 @@ Usage
 Click on the + icon and select the Add from hr-assist option, and send the request.
 Fill the details for the new employee:
 Claude desktop prompt with fields
-![Claude prompt](Resources/image.png)
+![Claude prompt](Resources/image.jpg)
 Alternatively, you can draft a custom prompt and let the agent take over.
 
 All rights reserver @Codebasics Inc and LearnerX India Private Ltd.
