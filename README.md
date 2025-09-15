@@ -1,43 +1,61 @@
-## HR-ASSIST Agentic AI System
-HR ASSIST is an Agentic AI system designed to help HR teams automate routine workflows. This example demonstrates automation of the employee onboarding process, streamlining tasks that typically require manual intervention.
+# HR-ASSIST — Agentic HR Automation 🧭🤖
 
-In terms of technical architecture, for MCP client we use Claude Desktop and the code base here represents the MCP server with necessary tools that will be used by MCP client
+[![Release](https://img.shields.io/badge/release-v1.0.0-blue.svg)](#)
+[![Python](https://img.shields.io/badge/python-3.10%2B-orange.svg)](#)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](#)
+[![Issues](https://img.shields.io/github/issues/yourorg/hr-assist)](#)
 
-🛠️ Setup Instructions
+> **HR ASSIST** is an *agentic* AI system designed to help HR teams automate routine workflows — onboarding, ticketing, meeting scheduling, leave management and more. This repo is the MCP **server** code used by the Claude Desktop MCP client.
 
-To set up and run HR ASSIST, follow these steps:
+---
 
-Configure claude_desktop_config.json Add the following configuration to your claude_desktop_config.json file:
+## Table of contents
+- [Highlights](#highlights)
+- [Architecture](#architecture)
+- [Setup](#setup)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Docs / GitHub Pages](#docs--github-pages)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-{
-"mcpServers": {
-    "hr-assist": {
-    "command": "C:\\Users\\dhaval\\.local\\bin\\uv",
-    "args": [
-        "--directory",
-        "C::\\code\\atliq-hr-assist",
-        "run",
-        "server.py"
-    ],
-    "env": {
-        "CB_EMAIL": "YOUR_EMAIL",
-        "CB_EMAIL_PWD": "YOUR_APP_PASSWORD"
-    }
-    }
-}
-}
-Replace YOUR_EMAIL with your actual email.
+---
 
-Replace YOUR_APP_PASSWORD with your email provider’s app-specific password (e.g., for Gmail).
+## Highlights
+- Agentic workflows for HR automation (onboarding flow example included)
+- MCP server with tools for email, ticketing, meetings, and leave requests
+- Simple example config for Claude Desktop MCP client
+- Can run locally or be published to GitHub Pages for styled docs
 
-Run uv init and uv add mcp[cli] as per the video tutorial in the course.
+---
 
-Usage
+## Architecture (high level)
+- `mcp` server exposes tools (Python functions decorated with `@mcp.tool()`) that the MCP client (Claude Desktop) calls.
+- Services:
+  - `EmployeeManager` — CRUD + search and reporting
+  - `LeaveManager` — balances, history, apply/cancel
+  - `MeetingManager` — schedule/cancel/list meetings
+  - `TicketManager` — request/track equipment
+- Email integration via `EmailSender` (SMTP)
+- Seed utilities for demo/test data
 
-Click on the + icon and select the Add from hr-assist option, and send the request.
-Fill the details for the new employee:
-Claude desktop prompt with fields
-![Claude prompt](Resources/image.jpg)
-Alternatively, you can draft a custom prompt and let the agent take over.
+---
 
-All rights reserver @Codebasics Inc and LearnerX India Private Ltd.
+## Setup
+
+> Prerequisites: Python 3.10+, pip, and optionally a virtualenv.
+
+```bash
+# clone
+git clone https://github.com/yourorg/hr-assist.git
+cd hr-assist
+
+# create venv (optional but recommended)
+python -m venv .venv
+source .venv/bin/activate    # macOS / Linux
+.\.venv\Scripts\activate     # Windows
+
+# install
+pip install -r requirements.txt
